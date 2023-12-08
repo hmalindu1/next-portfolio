@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import Link from "next/link";
-import Logo from './Logo';
+import Logo from "./Logo";
 
 /**
  * Renders the Navbar component.
@@ -8,27 +8,46 @@ import Logo from './Logo';
  * @return {React.Element} The rendered Navbar component.
  */
 const Navbar = () => {
-    return (
-        // Render the header element with the specified classes
-        <header className='w-full px-32 py-8 font-medium flex items-center justify-between'>
-            <nav>
-                {/* Render the links */}
-                <Link href="/">Home</Link>
-                <Link href="/about">About</Link>
-                <Link href="/projects">Projects</Link>
-                <Link href="/articles">Articles</Link>
-            </nav>
-            <Logo/>
-            <nav>
-                <Link href="/" target='_blank'>T</Link>
-                <Link href="/" target='_blank'>T</Link>
-                <Link href="/" target='_blank'>T</Link>
-                <Link href="/" target='_blank'>T</Link>
-                <Link href="/" target='_blank'>T</Link>
-                <Link href="/" target='_blank'>T</Link>
-            </nav>
-        </header>
-    );
+  return (
+    // Render the header element with the specified classes
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+      {/* Render the links */}
+      <nav>
+        {/* Render the links */}
+        <Link href="/">Home</Link> {/* Link to the Home page */}
+        <Link href="/about">About</Link> {/* Link to the About page */}
+        <Link href="/projects">Projects</Link> {/* Link to the Projects page */}
+        <Link href="/articles">Articles</Link> {/* Link to the Articles page */}
+      </nav>
+
+      {/* Render the links */}
+      <nav>
+        <Link href="/" target="_blank">
+          T
+        </Link> {/* Link to an external resource */}
+        <Link href="/" target="_blank">
+          T
+        </Link> {/* Link to an external resource */}
+        <Link href="/" target="_blank">
+          T
+        </Link> {/* Link to an external resource */}
+        <Link href="/" target="_blank">
+          T
+        </Link> {/* Link to an external resource */}
+        <Link href="/" target="_blank">
+          T
+        </Link> {/* Link to an external resource */}
+        <Link href="/" target="_blank">
+          T
+        </Link> {/* Link to an external resource */}
+      </nav>
+
+      {/* Render the logo */}
+      <div className="absolute left-[50%] top-2 translate-x-[-50%]">
+        <Logo /> {/* Render the Logo component */}
+      </div>
+    </header>
+  );
 };
 
-export default Navbar
+export default Navbar;
