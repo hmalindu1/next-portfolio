@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from "next/link";
+import Logo from './Logo';
 
 /**
  * Renders the Navbar component.
@@ -17,7 +18,7 @@ const Navbar = () => {
                 <Link href="/projects">Projects</Link>
                 <Link href="/articles">Articles</Link>
             </nav>
-            <h1>Logo</h1>
+            <Logo/>
             <nav>
                 <Link href="/" target='_blank'>T</Link>
                 <Link href="/" target='_blank'>T</Link>
