@@ -1,3 +1,10 @@
+/* ==================================== Audit Log ======================================== *
+ * Title: Navbar Component
+ * Author: Hashan
+ * Created on: 8 Dec 2023
+ * Description: Navbar component for the UI
+/* ======================================================================================== */
+
 import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
