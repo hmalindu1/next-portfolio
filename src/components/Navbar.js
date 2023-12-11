@@ -8,6 +8,7 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
+import TwitterIcon from "./Icons";
 
 /**
  * Renders the Navbar component.
@@ -30,7 +31,7 @@ const Navbar = () => {
       {/* Render the links */}
       <nav>
         <Link href="/" target="_blank">
-          T
+        <TwitterIcon/>
         </Link> {/* Link to an external resource */}
         <Link href="/" target="_blank">
           T
