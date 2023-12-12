@@ -8,7 +8,7 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
-import { GithubIcon, LinkedInIcon, StackOverflowIcon } from "./Icons";
+import { GithubIcon, LinkedInIcon, StackOverflowIcon, MediumIcon } from "./Icons";
 
 /**
  * Renders the Navbar component.
@@ -43,17 +43,8 @@ const Navbar = () => {
         </Link>{" "}
         {/* Link to an external resource */}
         <Link href="/" target="_blank">
-          T
+          <MediumIcon/>
         </Link>{" "}
-        {/* Link to an external resource */}
-        <Link href="/" target="_blank">
-          T
-        </Link>{" "}
-        {/* Link to an external resource */}
-        <Link href="/" target="_blank">
-          T
-        </Link>{" "}
-        {/* Link to an external resource */}
       </nav>
 
       {/* Render the logo */}
