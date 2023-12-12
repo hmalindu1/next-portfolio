@@ -10,6 +10,12 @@ import Link from "next/link";
 import Logo from "./Logo";
 import { GithubIcon, LinkedInIcon, StackOverflowIcon, MediumIcon } from "./Icons";
 
+const CustomLink = ({ href, title, className = "" }) => {
+  return (
+    <Link href={href} className={`${className}`}>{title}</Link>
+  )
+}
+
 /**
  * Renders the Navbar component.
  *
@@ -22,29 +28,29 @@ const Navbar = () => {
       {/* Render the links */}
       <nav>
         {/* Render the links */}
-        <Link href="/">Home</Link> {/* Link to the Home page */}
-        <Link href="/about">About</Link> {/* Link to the About page */}
-        <Link href="/projects">Projects</Link> {/* Link to the Projects page */}
-        <Link href="/articles">Articles</Link> {/* Link to the Articles page */}
+        <CustomLink href="/" title={"Home"}/>
+        <CustomLink href="/about" title={"About"} />
+        <CustomLink href="/projects" title={"Projects"} />
+        <CustomLink href="/articles" title={"Articles"} />
       </nav>
 
       {/* Render the links */}
-      <nav>
-        <Link href="/" target="_blank">
+      <nav className="flex items-center justify-center flex-wrap">
+        <a href="/" target="_blank">
           <LinkedInIcon />
-        </Link>{" "}
-        {/* Link to an external resource */}
-        <Link href="/" target="_blank">
+        </a>{" "}
+        {/* a to an external resource */}
+        <a href="/" target="_blank">
           <GithubIcon/>
-        </Link>{" "}
-        {/* Link to an external resource */}
-        <Link href="/" target="_blank">
+        </a>{" "}
+        {/* a to an external resource */}
+        <a href="/" target="_blank">
           <StackOverflowIcon/>
-        </Link>{" "}
-        {/* Link to an external resource */}
-        <Link href="/" target="_blank">
+        </a>{" "}
+        {/* a to an external resource */}
+        <a href="/" target="_blank">
           <MediumIcon/>
-        </Link>{" "}
+        </a>{" "}
       </nav>
 
       {/* Render the logo */}
