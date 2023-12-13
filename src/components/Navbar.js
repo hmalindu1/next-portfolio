@@ -8,13 +8,22 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
-import { GithubIcon, LinkedInIcon, StackOverflowIcon, MediumIcon } from "./Icons";
+import {
+  GithubIcon,
+  LinkedInIcon,
+  StackOverflowIcon,
+  MediumIcon,
+} from "./Icons";
 
 const CustomLink = ({ href, title, className = "" }) => {
   return (
-    <Link href={href} className={`${className}`}>{title}</Link>
-  )
-}
+    <Link href={href} className={`${className} relative`}>
+      {title}
+
+      <span className="h-[1px] inline-block w-full bg-dark absolute left-0 -bottom-0.5">&nbsp;</span>
+    </Link>
+  );
+};
 
 /**
  * Renders the Navbar component.
@@ -28,10 +37,10 @@ const Navbar = () => {
       {/* Render the links */}
       <nav>
         {/* Render the links */}
-        <CustomLink href="/" title={"Home"}/>
-        <CustomLink href="/about" title={"About"} />
-        <CustomLink href="/projects" title={"Projects"} />
-        <CustomLink href="/articles" title={"Articles"} />
+        <CustomLink href="/" title="Home" className="mr-4" />
+        <CustomLink href="/about" title="About" className="mx-4" />
+        <CustomLink href="/projects" title="Projects" className="mx-4" />
+        <CustomLink href="/articles" title="Articles" className="ml-4" />
       </nav>
 
       {/* Render the links */}
@@ -41,15 +50,15 @@ const Navbar = () => {
         </a>{" "}
         {/* a to an external resource */}
         <a href="/" target="_blank">
-          <GithubIcon/>
+          <GithubIcon />
         </a>{" "}
         {/* a to an external resource */}
         <a href="/" target="_blank">
-          <StackOverflowIcon/>
+          <StackOverflowIcon />
         </a>{" "}
         {/* a to an external resource */}
         <a href="/" target="_blank">
-          <MediumIcon/>
+          <MediumIcon />
         </a>{" "}
       </nav>
 
