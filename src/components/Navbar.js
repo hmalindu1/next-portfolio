@@ -15,6 +15,7 @@ import {
   MediumIcon,
 } from "./Icons";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -53,21 +54,21 @@ const Navbar = () => {
 
       {/* Render the links */}
       <nav className="flex items-center justify-center flex-wrap">
-        <a href="/" target="_blank">
+        <motion.a whileHover={{ y: -2 }} href="/" target="_blank">
           <LinkedInIcon />
-        </a>{" "}
+        </motion.a>
         {/* a to an external resource */}
-        <a href="/" target="_blank">
+        <motion.a whileHover={{ y: -2 }} href="/" target="_blank">
           <GithubIcon />
-        </a>{" "}
+        </motion.a>
         {/* a to an external resource */}
-        <a href="/" target="_blank">
+        <motion.a whileHover={{ y: -2 }} href="/" target="_blank">
           <StackOverflowIcon />
-        </a>{" "}
+        </motion.a>
         {/* a to an external resource */}
-        <a href="/" target="_blank">
+        <motion.a whileHover={{ y: -2 }} href="/" target="_blank">
           <MediumIcon />
-        </a>{" "}
+        </motion.a>
       </nav>
 
       {/* Render the logo */}
