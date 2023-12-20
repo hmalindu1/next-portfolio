@@ -46,7 +46,7 @@ const Navbar = () => {
       {/* Render the links */}
       <nav>
         {/* Render the links */}
-        <CustomLink href="/" title="Home" className="mr-4" />
+        <CustomLink href="/" title="Home" className="mr-4 " />
         <CustomLink href="/about" title="About" className="mx-4" />
         <CustomLink href="/projects" title="Projects" className="mx-4" />
         <CustomLink href="/articles" title="Articles" className="ml-4" />
@@ -54,19 +54,43 @@ const Navbar = () => {
 
       {/* Render the links */}
       <nav className="flex items-center justify-center flex-wrap">
-        <motion.a whileHover={{ y: -2 }} href="/" target="_blank">
+        <motion.a
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          href="/"
+          target="_blank"
+          className="w-6 mx-3"
+        >
           <LinkedInIcon />
         </motion.a>
         {/* a to an external resource */}
-        <motion.a whileHover={{ y: -2 }} href="/" target="_blank">
+        <motion.a
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          href="/"
+          target="_blank"
+          className="w-6 mx-3"
+        >
           <GithubIcon />
         </motion.a>
         {/* a to an external resource */}
-        <motion.a whileHover={{ y: -2 }} href="/" target="_blank">
+        <motion.a
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          href="/"
+          target="_blank"
+          className="w-6 mx-3"
+        >
           <StackOverflowIcon />
         </motion.a>
         {/* a to an external resource */}
-        <motion.a whileHover={{ y: -2 }} href="/" target="_blank">
+        <motion.a
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          href="/"
+          target="_blank"
+          className="w-6 mx-3"
+        >
           <MediumIcon />
         </motion.a>
       </nav>
