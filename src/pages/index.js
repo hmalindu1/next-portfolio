@@ -15,8 +15,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='flex items-center text-dark w-full min-h-100vh'>
-        <Layout />
+      <main className='flex items-center text-dark w-full min-h-screen'>
+        <Layout>
+          <h1>Home</h1>
+        </Layout>
       </main>
     </>
   )
